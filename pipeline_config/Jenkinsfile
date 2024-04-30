@@ -1,0 +1,24 @@
+pipeline{
+
+    agent{
+        label
+    }
+    
+    stages{
+        stage("Stage1: Hello 1"){
+            steps{
+                echo("Hello 1")
+            }
+        }
+        stage("Stage1: Hello 2"){
+            steps{
+                echo("Hello 2")
+            }
+        }
+        stage("Stage1: Hello 3"){
+            steps{
+                echo("Hello 3")
+            }
+        }
+    }
+}
