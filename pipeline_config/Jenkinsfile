@@ -1,23 +1,19 @@
-pipeline{
-
-    agent{
-        jenkins-agent-node2
-    }
-
-    stages{
-        stage("Stage1: Hello 1"){
-            steps{
-                echo("Hello 1")
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                //
             }
         }
-        stage("Stage1: Hello 2"){
-            steps{
-                echo("Hello 2")
+        stage('Test') {
+            steps {
+                //
             }
         }
-        stage("Stage1: Hello 3"){
-            steps{
-                echo("Hello 3")
+        stage('Deploy') {
+            steps {
+                //
             }
         }
     }
